@@ -8,6 +8,9 @@
 (defpackage :mtghub-engine
   (:use :cl ))
 
+(defpackage :mtghub-test
+  (:use :cl))
+
 (defvar mtghub-engine::*default-dir*
   (pathname (directory-namestring #.(or *compile-file-truename*
                                         *load-truename*)))
