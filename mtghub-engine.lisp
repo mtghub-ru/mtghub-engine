@@ -5,4 +5,7 @@
 
     (print "Project is loaded."))
 
+(defun method-for-test (x)
+    (+ x x))
+
 (initial-setup)

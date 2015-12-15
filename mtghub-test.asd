@@ -19,6 +19,7 @@
     :serial t
     :depends-on (:prove :mtghub-engine)
     :components ((:file "packages")
-                 (:file "test/initial-test")))
+                 (:file "test/initial-test")
+                 (:file "test/test-once")))
 
 ;; EOF

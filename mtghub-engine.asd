@@ -17,7 +17,7 @@
     :licence "mtghub.ru licence"
     :description "Free implementation core rules Magic The Gathering for mtghub.ru"
     :serial t
-    :depends-on (:cl-ppcre :clsql)
+    :depends-on ()
     :components ((:file "packages")
                  (:file "mtghub-engine")))
 

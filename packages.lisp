@@ -6,10 +6,11 @@
 (in-package :cl-user)
 
 (defpackage :mtghub-engine
-  (:use :cl ))
+  (:use :cl )
+  (:export :method-for-test))
 
 (defpackage :mtghub-test
-  (:use :cl))
+  (:use :cl :mtghub-engine :prove))
 
 (defvar mtghub-engine::*default-dir*
   (pathname (directory-namestring #.(or *compile-file-truename*
