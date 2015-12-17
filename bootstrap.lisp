@@ -8,23 +8,13 @@
         #p"c:/git/mtghub/mtghub-engine/"
         ))
 
-(defun load-packages ()
-    (ql:quickload :prove))
+(defun load-test ()
+    (ql:quickload :mtghub-test))
 
-(load-packages)
+(defun load-project ()
+    (ql:quickload :mtghub-engine))
 
-(defun load-systems ()
-    (asdf:operate 'asdf:load-op 'mtghub-engine)
-    (asdf:operate 'asdf:load-op 'mtghub-test))
+(defun run-test ()
+    (asdf:test-system :mtghub-test))
 
-(load-systems)
-
-(defun run-app ()
-    (mtghub-engine:method-for-test 2))
-
-(defun run-test()
-    ;; Turn support color scheme for SLIME
-    (setf prove:*enable-colors* t)
-    (prove:run :mtghub-test))
-
-(run-test)
+(load-test)

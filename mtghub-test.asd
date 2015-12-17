@@ -17,9 +17,12 @@
     :licence "mtghub.ru licence"
     :description "Free implementation core rules Magic The Gathering for mtghub.ru"
     :serial t
+    :defsystem-depends-on (:prove-asdf)
     :depends-on (:prove :mtghub-engine)
     :components ((:file "packages")
-                 (:file "test/initial-test")
-                 (:file "test/test-once")))
+                 (:test-file "test/initial-test")
+                 (:test-file "test/test-once"))
+    :perform (test-op :after (op c)
+                      (funcall (intern #.(string :run) :prove) c)))
 
 ;; EOF
