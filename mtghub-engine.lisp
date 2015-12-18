@@ -6,6 +6,7 @@
     (print "Project is loaded."))
 
 (defun method-for-test (x)
-    (+ x x))
+    (match x
+        (m (+ m m))))
 
 (initial-setup)
