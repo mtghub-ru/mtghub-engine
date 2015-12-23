@@ -1,7 +1,7 @@
 # Magic The Gathering Engine
 An open source implementation of the rules engine MTG (Magic The Gathering)
 
-## Purpose/ToDo
+## Goal
 
 - Coverage all MTG's rules (oldest and newest mechanics);
 - Achive simple integration (or embeded) the engine with other projects;
