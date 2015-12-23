@@ -1,5 +1,6 @@
 (make-game :type 'duel
-           :players '(victim, hunter98))
+           :players '(victim, hunter98)
+           :hand-size 7)
 
 (make-player *player1* :health 20 :nickname: 'victim)
 (make-player *player2* :health 20 :nickname: 'hunter98)

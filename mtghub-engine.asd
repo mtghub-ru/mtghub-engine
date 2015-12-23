@@ -19,6 +19,13 @@
     :serial t
     :depends-on (:cl-match)
     :components ((:file "packages")
+                 (:module "src"
+                  :components
+                  ((:module "game-objects"
+                    :pathname "game-objects"
+                    :components
+                    ((:file "object")))
+                   (:file "game")))
                  (:file "mtghub-engine")))
 
 ;; EOF
