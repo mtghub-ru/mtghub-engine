@@ -9,8 +9,12 @@ Project: http://mtghub.ru
 GitHub: https://github.com/mtghub-ru/mtghub-engine/
 |#
 
+(in-package :cl-user)
 
-(in-package :mtghub.game.objects)
+(defpackage :mtghub.game.enums
+  (:use :cl))
+
+(in-package :mtghub.game.enums)
 
 (defparameter *color-values*
   ;; [Rule 105.1] There are six types of mana:
