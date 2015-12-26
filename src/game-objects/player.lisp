@@ -20,8 +20,13 @@ GitHub: https://github.com/mtghub-ru/mtghub-engine/
    (life
     :initarg :life
     :initform 20
-    :accesor life
+    :accessor life
     :documentation "Player lose game if his life will become to equal 0 or less.")
+   (library
+    :initarg :deck
+    :initform (list)
+    :accessor library
+    :documentation "[Rule 401] When a game begins, each player’s deck becomes his or her library.")
    (hand
     :initarg :hand
     :initform (list)

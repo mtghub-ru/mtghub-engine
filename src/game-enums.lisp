@@ -9,11 +9,6 @@ Project: http://mtghub.ru
 GitHub: https://github.com/mtghub-ru/mtghub-engine/
 |#
 
-(in-package :cl-user)
-
-(defpackage :mtghub.game.enums
-  (:use :cl))
-
 (in-package :mtghub.game.enums)
 
 (defparameter *color-values*

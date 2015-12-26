@@ -14,11 +14,23 @@ GitHub: https://github.com/mtghub-ru/mtghub-engine/
 (defpackage :mtghub.game.objects
   (:use :cl))
 
-(defpackage :mtghub-engine
-  (:use :cl :cl-match :mtghub.game.objects)
+(defpackage :mtghub.game.game-machine
+  (:use :cl))
+
+(defpackage :mtghub.game.enums
+  (:use :cl))
+
+
+(defpackage :mtghub.game
+  (:use
+   :cl
+   :cl-match
+   :mtghub.game.objects
+   :mtghub.game.enums)
   (:export :method-for-test))
 
 (defpackage :mtghub-test
-  (:use :cl :mtghub-engine :prove))
+  (:use :cl :prove
+        :mtghub.game))
 
 ;; EOF

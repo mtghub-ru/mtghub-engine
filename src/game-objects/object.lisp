@@ -45,4 +45,14 @@ GitHub: https://github.com/mtghub-ru/mtghub-engine/
     :initarg :mana-cost
     :initform (list)
     :accessor mana-cost
-    :documentation "[Rule 202] A card’s mana cost is indicated by mana symbols near the top of the card")))
+    :documentation "[Rule 202] A card’s mana cost is indicated by mana symbols near the top of the card")
+   (rules-text
+    :initarg :rules-text
+    :initform ""
+    :accessor rules-text
+    :documentation "[Rule 207] The text box is printed on the lower half of the card. It usually contains rules text defining the card’s abilities.")
+   (owner
+    :initarg :owner
+    :initform (error "Must supply a owner's object.")
+    :accessor owner
+    :documentation "All objects must has owner.")))
