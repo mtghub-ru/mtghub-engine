@@ -22,7 +22,17 @@ GitHub: https://github.com/mtghub-ru/mtghub-engine/
     :initarg :card-types
     :initform (list)
     :accessor card-types
-    :documentation "[205.2] The card types are artifact, conspiracy, creature, enchantment, instant, land, phenomenon, plane, planeswalker, scheme, sorcery, tribal, and vanguard")
+    :documentation "[Rule 205.2] The card types are artifact, conspiracy, creature, enchantment, instant, land, phenomenon, plane, planeswalker, scheme, sorcery, tribal, and vanguard")
+   (subtypes
+    :initarg :subtypes
+    :initform (list)
+    :accessor subtypes
+    :documentation "[Rule 205.3] Subtypes of each card type except plane are always single words and are listed after a long dash")
+   (supertypes
+    :initarg :supertypes
+    :initform (list)
+    :accessor supertypes
+    :documentation "[Rule 205.4] These are printed directly before its card types. The supertypes are basic, legendary, ongoing, snow, and world.")
    (color
     :reader :color
     :documentation "[Rule 200] An object can be one or more of the five colors, or it can be no color at all")
