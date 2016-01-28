@@ -11,30 +11,34 @@
 (in-package :mtghub-engine-asd)
 
 (defsystem mtghub-engine
-    :author "Glebov Boris (aka Warlock_29A) Project <mtghub.ru>"
-    :name "mtghub-engine"
-    :maintainer "Glebov Boris"
-    :licence "mtghub.ru licence"
-    :description "Free implementation core rules Magic The Gathering for mtghub.ru"
-    :serial t
-    :depends-on (:cl-match :uuid)
-    :components ((:file "packages")
-                 (:module "src"
-                  :components
-                  ((:module "game-objects"
-                    :pathname "game-objects"
-                    :components
-                    ((:file "object")
-                     (:file "card")
-                     (:file "player")))
-                   (:module "game-machine"
-                    :pathname "game-machine"
-                    :components
-                    ((:file "macros")
-                     (:file "mgml")
-                     (:file "game-machine")))
-                   (:file "game-enums")
-                   (:file "game")))
-                 (:file "mtghub-engine")))
+  :author "Glebov Boris (aka Warlock_29A) Project <mtghub.ru>"
+  :name "mtghub-engine"
+  :maintainer "Glebov Boris"
+  :licence "mtghub.ru licence"
+  :description "Free implementation core rules Magic The Gathering for mtghub.ru"
+  :serial t
+  :depends-on (:cl-match :uuid)
+  :components ((:file "packages")
+               (:module "src"
+                        :components
+                        ((:module "game-objects"
+                                  :pathname "game-objects"
+                                  :components
+                                  ((:file "object")
+                                   (:file "card")
+                                   (:file "player")))
+                         (:module "game-machine"
+                                  :pathname "game-machine"
+                                  :components
+                                  ((:file "macros")
+                                   (:file "mgml")
+                                   (:file "game-machine")))
+                         (:module "game-engines"
+                                  :pathname "game-engines"
+                                  ((:file "duel")))
+                         (:file "game-enums")
+                         (:file "game")
+                         (:file "repl")))
+               (:file "mtghub-engine")))
 
 ;; EOF

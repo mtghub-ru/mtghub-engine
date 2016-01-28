@@ -2,3 +2,4 @@
 *.fasl
 *.lisp-temp
 .#*
+src/game-engines/#duel.lisp#

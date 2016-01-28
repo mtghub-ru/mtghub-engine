@@ -8,5 +8,3 @@ Author: Glebov Boris (avatar29@gmail.com)
 Project: http://mtghub.ru
 GitHub: https://github.com/mtghub-ru/mtghub-engine/
 |#
-
-(in-package :mtghub.game)

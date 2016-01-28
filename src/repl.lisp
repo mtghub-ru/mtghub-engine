@@ -9,4 +9,4 @@ Project: http://mtghub.ru
 GitHub: https://github.com/mtghub-ru/mtghub-engine/
 |#
 
-(in-package :mtghub.game)
+(in-package :mtghub.repl)

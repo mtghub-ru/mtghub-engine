@@ -37,3 +37,6 @@ GitHub: https://github.com/mtghub-ru/mtghub-engine/
     :initform (list)
     :accessor graveyard
     :documentation "[Rule 404] A player’s graveyard is his or her discard pile.")))
+
+(defun make-plaer (name)
+  (make-instance 'player :name name))

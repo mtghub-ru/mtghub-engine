@@ -20,7 +20,6 @@ GitHub: https://github.com/mtghub-ru/mtghub-engine/
 (defpackage :mtghub.game.enums
   (:use :cl))
 
-
 (defpackage :mtghub.game
   (:use
    :cl
@@ -28,6 +27,13 @@ GitHub: https://github.com/mtghub-ru/mtghub-engine/
    :mtghub.game.objects
    :mtghub.game.enums)
   (:export :method-for-test))
+
+(defpackage :mtghub.engines
+  )
+
+(defpackage :mtghub.repl
+  (:use :cl
+        :mtghub.game))
 
 (defpackage :mtghub-test
   (:use :cl :prove
