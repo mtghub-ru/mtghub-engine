@@ -35,6 +35,7 @@
                                    (:file "game-machine")))
                          (:module "game-engines"
                                   :pathname "game-engines"
+                                  :components
                                   ((:file "duel")))
                          (:file "game-enums")
                          (:file "game")
