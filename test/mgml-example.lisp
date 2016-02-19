@@ -1,9 +1,34 @@
 (make-game :type 'duel
-           :players '(victim, hunter98)
+           :players '("victim", "hunter98")
            :hand-size 7)
 
-(make-player *player1* :health 20 :nickname: 'victim)
-(make-player *player2* :health 20 :nickname: 'hunter98)
+(join "victim"
+      :deck ((card (creature "goblin"
+                             :tougness 1
+                             :power 1) 10)
+             (card (land 'plains) 10)
+             (card (land 'mountains) 15))
+      :life 20)
+
+(join "hunter98"
+      :deck ((card (creature "spider"
+                             :tougness 1
+                             :power 1) 10)
+             (card (land 'forest) 25))
+      :life 20)
+
+(shuffle (deck 'player1)
+         (card 'goblin)
+         (card 'mountines)
+         (card 'mountines)
+         (card 'plains)
+         (card 'goblin)) ;; etc
+
+(shuffle (deck 'player2)
+         (card 'forest)
+         (card 'forest)
+         (card 'spider)
+         (card 'forest)) ;; etc
 
 (make-deck *player1*
            (card "Фантом Джейса")
