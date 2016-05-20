@@ -59,7 +59,7 @@ git push origin dev     #(optional) this makes sure dev in your own fork on GitH
 
 See https://help.github.com/articles/fetching-a-remote for more info
 
-- Create a new feature branch. It's important that you do your work on your own branch and that it's created off of _dev_. Tip: Give it a descriptive name and include the issue number, e.g. `implement-lengthframeencoder-323` or `295-implement-recvbuffer`, so that others can see what is being worked on.
+- Create a new feature branch. It's important that you do your work on your own branch and that it's created off of _dev_. Tip: Give it a descriptive name and include the issue number, e.g. `implement-haste-ability-323` or `295-implement-avatar-of-will-card`, so that others can see what is being worked on.
 ```
 git checkout -b my-new-branch-123
 ```
