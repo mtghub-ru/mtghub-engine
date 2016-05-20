@@ -42,4 +42,5 @@ Good Luck!
 # ToDo
 
 - [ ] Usage section
+- [ ] Implement Core set of rules
 - [ ] Travis CI
