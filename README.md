@@ -39,6 +39,10 @@ Good Luck!
 (load "PATH_TO_APPLICATION_FOLDER\bootstrap.lisp")
 ```
 
+# Documentation
+
+http://mtghub-ru.github.io/mtghub-engine
+
 # ToDo
 
 - [ ] Usage section
